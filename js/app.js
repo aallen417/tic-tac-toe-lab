@@ -4,35 +4,31 @@
 
 /*---------------------------- Variables (state) ----------------------------*/
 
-let board = [
-    "", "", "",
-    "", "", "",
-    "", "", ""
-]
-let turn = "X"
-let winner = false
-let tie = false
+let board 
+let turn 
+let winner
+let tie
 
 /*------------------------ Cached Element References ------------------------*/
 
 const squareEls = document.querySelectorAll(".sqr")
-messageEl = document.querySelector("#message")
+messageEl = document.getElementById("message")
+
 
 /*-------------------------------- Functions --------------------------------*/
 
-const render = () => {
-
-}
-const updateBoard = () => {
-    board.forEach((square, index) => {
-        squareEls[index]
-    })
-}
 const init = () => {
+    board = ["","","","","","","","",""]
+    turn = "X"
+    winner = false
+    tie = false
     render()
 }
 
-init()
+const render = () => {
+
+
+}
 
 /*----------------------------- Event Listeners -----------------------------*/
 
