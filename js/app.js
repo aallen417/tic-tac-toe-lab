@@ -45,6 +45,7 @@ function updateBoard() {
     if (cell === "X") {
       squareEls[idx].textContent = "X"
       squareEls[idx].style.backgroundColor = "purple"
+      squareEls[idx].style.color = "white"
     } else if (cell === "O") {
       squareEls[idx].textContent = "O"
       squareEls[idx].style.backgroundColor = "orange"
