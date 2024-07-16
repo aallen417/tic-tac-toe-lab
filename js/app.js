@@ -44,11 +44,12 @@ function updateBoard() {
   board.forEach((cell, idx) => {
     if (cell === "X") {
       squareEls[idx].textContent = "X"
-      squareEls[idx].style.backgroundColor = "purple"
+      squareEls[idx].style.backgroundColor = "#600098"
       squareEls[idx].style.color = "white"
     } else if (cell === "O") {
       squareEls[idx].textContent = "O"
-      squareEls[idx].style.backgroundColor = "orange"
+      squareEls[idx].style.backgroundColor = "#EB6400"
+      squareEls[idx].style.color = "black"
     } else {
       squareEls[idx].textContent = ""
       squareEls[idx].style.backgroundColor = "white"
